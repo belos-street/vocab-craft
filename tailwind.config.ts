@@ -14,5 +14,9 @@ export default {
       },
     },
   },
+  safelist: [
+    // 匹配所有可能的颜色和色阶
+    { pattern: /bg-(red|blue|green|yellow|indigo|orange)-(200|400|600|800)/ },
+  ],
   plugins: [],
 } satisfies Config;
