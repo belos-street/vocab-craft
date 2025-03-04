@@ -4,6 +4,7 @@ type BookProps = {
   title: string
   subTitle?: string
   color: string
+  route?: string
 }
 export function Book(props: BookProps) {
   const handleClick = () => {
