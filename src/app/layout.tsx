@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { AntdRegistry } from '@ant-design/nextjs-registry'
-import { Divider } from 'antd'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -28,11 +27,7 @@ export default function RootLayout({
     <html lang="zh_CN">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <AntdRegistry>
-          <div className="w-screen h-screen flex flex-col items-center">
-            <h1 className="mt-4 text-2xl">Vocab Craft</h1>
-            <Divider style={{ borderBlockStart: '1px solid #fff', margin: '6px 0' }} />
-            <div className="w-full h-full">{children}</div>
-          </div>
+          <main className="w-full h-full">{children}</main>
         </AntdRegistry>
       </body>
     </html>
