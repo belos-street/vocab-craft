@@ -1,0 +1,16 @@
+stage1
+ 完成web页面
+  .打字组件
+  .页面布局
+  .数据结构设计
+
+stage2
+ LLM模型接入自动化
+  .langchain
+  .openai
+  .提示词工程
+  
+stage3
+ 部署vercal
+  .发布脚本
+  .cicd
