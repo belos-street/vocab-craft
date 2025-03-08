@@ -40,6 +40,8 @@ body {
 }
 
 .chapter-list li {
+  color: #2c3e50;
+  font-size: 1.2em;
   background: white;
   margin-bottom: 15px;
   padding: 20px;
@@ -49,14 +51,10 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: transform 0.2s;
+  cursor: pointer;
 }
-
 .chapter-list li:hover {
   transform: translateX(10px);
-}
-.chapter-list li {
-  color: #2c3e50;
-  font-size: 1.2em;
 }
 .status {
   padding: 5px 15px;
@@ -70,4 +68,8 @@ body {
 .unread {
   background: #f1c40f;
   color: white;
+}
+
+.text-indent-2ch {
+  text-indent: 2ch;
 }
