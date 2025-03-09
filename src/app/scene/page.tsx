@@ -36,20 +36,25 @@ export default function Scene() {
         </Button>
         <h2 className="sub-title">测试文案</h2>
       </header>
-      <div className="scene-content flex flex-wrap justify-center self-center max-w-[420px] text-lg leading-relaxed text-indent-2ch">
-        <p className="text-i">
-          {parts.map((part, index) => {
-            if (part.startsWith('[') && part.endsWith(']')) {
-              return (
-                <span key={index} className="text-blue-500 font-semibold underline px-1">
-                  {part.slice(1, -1)}
-                </span>
-              )
-            }
-            return <span key={index}>{part}</span>
-          })}
-        </p>
-      </div>
+      <Carousel arrows infinite={false} adaptiveHeight={true}>
+        <div className="scene-content flex flex-wrap justify-center self-center max-w-[420px] text-lg leading-relaxed text-indent-2ch pb-6">
+          <p className="text-i">
+            {parts.map((part, index) => {
+              if (part.startsWith('[') && part.endsWith(']')) {
+                return (
+                  <span key={index} className="text-blue-500 font-semibold underline px-1">
+                    {part.slice(1, -1)}
+                  </span>
+                )
+              }
+              return <span key={index}>{part}</span>
+            })}
+          </p>
+        </div>
+        <div className="scene-content flex flex-wrap justify-center self-center max-w-[420px] text-lg leading-relaxed text-indent-2ch pb-6">
+          <h3>2</h3>
+        </div>
+      </Carousel>
     </div>
   )
 }
