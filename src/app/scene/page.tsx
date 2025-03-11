@@ -80,14 +80,14 @@ export default function Scene() {
   }
 
   return (
-    <div className="w-screen h-screen flex flex-col gap-12 p-5">
-      <header className="flex justify-between items-center mb-8">
+    <div className="w-screen h-screen flex flex-col">
+      <header className="flex justify-between items-center p-5">
         <Button color="danger" variant="solid" shape="round">
           返回
         </Button>
         <h2 className="sub-title">测试文案</h2>
       </header>
-      <Carousel arrows infinite={false} adaptiveHeight={true}>
+      <Carousel arrows infinite={false} adaptiveHeight draggable>
         {/* 第一页 */}
         <Page1 article={pageData.article} />
         {/* 第二页 */}

@@ -8,7 +8,7 @@ const Page1: React.FC<Page1Props> = ({ article }) => {
   const parts = article.split(/(\[[^\]]+\])/)
 
   return (
-    <div className="scene-content flex flex-wrap justify-center self-center max-w-[420px] text-lg leading-relaxed text-indent-2ch pb-6">
+    <div className="scene-content flex flex-wrap justify-center self-center max-w-[420px] text-lg leading-relaxed text-indent-2ch pb-8">
       <p className="text-i">
         {parts.map((part, index) => {
           if (part.startsWith('[') && part.endsWith(']')) {

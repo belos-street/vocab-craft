@@ -17,7 +17,7 @@ type Page2Props = {
 
 const Page2: React.FC<Page2Props> = ({ wordData }) => {
   return (
-    <div className="scene-content flex flex-wrap justify-center self-center max-w-[420px] text-lg pb-6">
+    <div className="scene-content flex flex-wrap justify-center self-center text-lg max-h-[calc(100vh-80px)] overflow-y-auto pb-8">
       <ul className="list-disc pl-6">
         {wordData.map((item, index) => (
           <li key={index} className="mb-4">
