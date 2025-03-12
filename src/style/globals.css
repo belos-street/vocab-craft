@@ -1,3 +1,5 @@
+@import './var.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,13 +7,13 @@
 body {
   font-family: 'Microsoft YaHei', sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, var(--background-start) 0%, var(--background-end) 100%);
   min-height: 100vh;
   overflow: hidden;
 }
 
 .home--title {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 3em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -27,8 +29,8 @@ body {
 }
 
 .sub-title {
-  color: #2c3e50;
-  border-bottom: 2px solid #3498db;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--primary-color);
   padding-bottom: 10px;
   font-size: 1.5em;
   font-weight: bold;
@@ -41,7 +43,7 @@ body {
 }
 
 .chapter-list li {
-  color: #2c3e50;
+  color: var(--text-primary);
   font-size: 1.2em;
   background: white;
   margin-bottom: 15px;
@@ -63,11 +65,11 @@ body {
   font-size: 0.9em;
 }
 .read {
-  background: #2ecc71;
+  background: var(--status-read);
   color: white;
 }
 .unread {
-  background: #f1c40f;
+  background: var(--status-unread);
   color: white;
 }
 
@@ -83,23 +85,23 @@ body {
 
 /* 滚动条轨道 */
 ::-webkit-scrollbar-track {
-  background: rgba(245, 247, 250);
+  background: var(--scrollbar-track);
   border-radius: 5px;
 }
 
 /* 滚动条滑块 */
 ::-webkit-scrollbar-thumb {
-  background: #3498db;
+  background: var(--scrollbar-thumb);
   border-radius: 5px;
-  border: 2px solid rgba(245, 247, 250);
+  border: 2px solid var(--scrollbar-track);
 }
 
 /* 滚动条滑块悬停效果 */
 ::-webkit-scrollbar-thumb:hover {
-  background: #3498db;
+  background: var(--scrollbar-thumb-hover);
 }
 
 /* 滚动条滑块激活状态 */
 ::-webkit-scrollbar-thumb:active {
-  background: #1abc9c;
+  background: var(--scrollbar-thumb-active);
 }

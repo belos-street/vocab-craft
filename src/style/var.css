@@ -1,0 +1,26 @@
+/* var.css */
+
+:root {
+  /* 主题颜色 */
+  --primary-color: #3498db;
+  --secondary-color: #2980b9;
+  --accent-color: #1abc9c;
+
+  /* 背景颜色 */
+  --background-start: #f5f7fa;
+  --background-end: #c3cfe2;
+
+  /* 文字颜色 */
+  --text-primary: #2c3e50;
+  --text-secondary: #34495e;
+
+  /* 状态颜色 */
+  --status-read: #2ecc71;
+  --status-unread: #f1c40f;
+
+  /* 滚动条颜色 */
+  --scrollbar-track: rgba(245, 247, 250, 0.6);
+  --scrollbar-thumb: #c3cfe2;
+  --scrollbar-thumb-hover: #2980b9;
+  --scrollbar-thumb-active: #1abc9c;
+}
